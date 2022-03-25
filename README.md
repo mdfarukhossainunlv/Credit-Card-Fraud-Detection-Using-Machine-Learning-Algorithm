@@ -60,23 +60,23 @@ Note: We have to make sure we use the subsample in our correlation matrix or els
 
 ![graph5](https://user-images.githubusercontent.com/63221463/160039383-6996727f-3bd5-4a97-ae07-f7a128e69523.png)
 
-PNG ANNS
+![ANNs](https://user-images.githubusercontent.com/63221463/160039765-ea3c46b9-52ba-45eb-9cd4-46969cde47d8.png)
 
 # XGBoost
 
-png xgboost
+![XGBoost](https://user-images.githubusercontent.com/63221463/160039806-63ad787f-9173-4f50-8cf2-a5d796ef98ab.png)
 
 # Random Forest
 
-png random forest
+![random forest](https://user-images.githubusercontent.com/63221463/160039804-25bb22a6-1895-456c-88b2-d770da052ebb.png)
 
 # CatBoost
 
-png catboost
+![catboost](https://user-images.githubusercontent.com/63221463/160039766-231d4123-f6c3-4c8f-a0fc-f5690b7814ab.png)
 
 # LigthGBM
 
-png ligthgbm
+![ligthGBM](https://user-images.githubusercontent.com/63221463/160039802-84d58281-699f-475d-8885-082ff99365e3.png)
 
 # Model Comparison
 
