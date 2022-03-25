@@ -23,7 +23,8 @@ Since all features are anonymous, we will focus our analysis on non-anonymized f
 - Amount
 - Class (1: fraud, 0: not_fraud)
 
-png
+![graph1](https://user-images.githubusercontent.com/63221463/160039336-0f8f85d9-16a7-4dc9-8f1d-24c17cd8b3b7.png)
+
 
 Notice how imbalanced is our original dataset! Most of the transactions are non-fraud. If we use this DataFrame as the base for our predictive models and analysis we might get a lot of errors and our algorithms will probably overfit since it will “assume” that most transactions are not a fraud. But we don’t want our model to assume, we want our model to detect patterns that give signs of fraud!
 
@@ -35,9 +36,9 @@ By seeing the distributions we can have an idea of how skewed are these features
 
 Doesn’t seem like the time of transaction really matters here as per the above observation. Now let us take a sample of the dataset for our modeling and prediction
 
-PNG
+![graph2](https://user-images.githubusercontent.com/63221463/160039338-76e75b0c-a215-4831-827f-5ad651da3610.png)
 
-PNG
+![graph3](https://user-images.githubusercontent.com/63221463/160039341-15fec96e-72e9-434e-ae1d-c052a064a6d9.png)
 
 # Correlation Matrices
 Correlation matrices are the essence of understanding our data. We want to know if there are features that influence heavily in whether a specific transaction is a fraud. However, it is important that we use the correct DataFrame (subsample) in order for us to see which features have a high positive or negative correlation with regard to fraud transactions.
@@ -48,7 +49,7 @@ Correlation matrices are the essence of understanding our data. We want to know 
 
 Note: We have to make sure we use the subsample in our correlation matrix or else our correlation matrix will be affected by the high imbalance between our classes. This occurs due to the high-class imbalance in the original DataFrame.
 
-PNG
+![graph4](https://user-images.githubusercontent.com/63221463/160039388-ba4c845e-dc31-4a04-ad16-e2b1511521d8.png)
 
 # Model Building
 
@@ -57,7 +58,7 @@ PNG
 2671/2671 [==============================] - 11s 4ms/step - loss: 0.0037 - fn: 29.0000 - fp: 12.0000 - tn: 85295.0000 - tp: 107.0000 - precision: 0.8992 - recall: 0.7868
 [0.003686850192025304, 29.0, 12.0, 85295.0, 107.0, 0.8991596698760986, 0.7867646813392639]
 
-PNG
+![graph5](https://user-images.githubusercontent.com/63221463/160039383-6996727f-3bd5-4a97-ae07-f7a128e69523.png)
 
 PNG ANNS
 
@@ -79,7 +80,7 @@ png ligthgbm
 
 # Model Comparison
 
-png
+![graph6](https://user-images.githubusercontent.com/63221463/160039385-f5d7cc5d-4efa-4cdf-ba88-5b3cc8862da9.png)
 
 # Conclusions:
 We learned how to develop our credit card fraud detection model using machine learning. We used a variety of ML algorithms including ANNs and Tree-based models. At the end of the training, out of 85443 validation transaction, XGBoost perform better than other models:
